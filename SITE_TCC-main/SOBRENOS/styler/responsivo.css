@@ -1,0 +1,13 @@
+@media (max-width:770px) {
+    .Lista-box{
+        width: 45%;
+        padding: auto;
+    }
+    
+}
+
+@media (max-width:600px) {
+    .Lista-box{
+        width: 100%;
+    }
+}
