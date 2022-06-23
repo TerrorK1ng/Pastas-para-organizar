@@ -1,0 +1,82 @@
+footer{
+    background-color: rgb(37, 36, 36);
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1400px;
+    padding:0 4%;
+    margin:auto;
+}
+
+.container-links{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.Lista-box{
+    width: 25%;
+    padding:0 15px ;
+}
+
+.Lista-box h6{
+    font-size: 22px;
+    color: #003bfd;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.Lista-box ul li{
+    margin:10px 0;
+}
+
+.Lista-box ul li a{
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #eee;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.Lista-box ul li a:hover{
+    color: rgb(180, 170, 170);
+    padding-left: 10px;
+}
+.Redes-sociais a{
+    margin-left: 7px;
+    border:none;
+}
+.Redes-sociais h6{
+    font-size: 22px;
+    color: #d6e0ff;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.Redes-sociais ul li a{
+    border:none;
+}
+.Facebook{
+    display: flex;
+}
+
+/* Responsivo footer */
+@media (max-width:770px) {
+    .Lista-box{
+        width: 45%;
+        padding: auto;
+    }
+    
+}
+
+@media (max-width:600px) {
+    .Lista-box{
+        width: 100%;
+    }
+}
