@@ -1,0 +1,167 @@
+/* Inicio responsivo do Header */
+@media (max-width: 900px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: rgb(37, 36, 36);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+  }
+  #btn-hopper {
+    display: none;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: white;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+/* Fim responsivo do Header */
+
+
+
+/* Inicio Sobre Nós */
+@media (max-width: 900px){
+  .container-2 {  
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+  .container-alinhamento{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .container-molduras{
+      height: 20em;
+      width: 20em;
+      text-align: center;
+      overflow:hidden;
+      margin: 0 auto;
+      border-radius:5px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      background: rgba( 255, 255, 255, 0.25 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  .container-molduras .col img{
+      position:relative;
+      z-index:20;
+      border-radius: 50%;
+      display: block;
+      height: 200px;
+      width: 200px;
+      border: 5px solid rgb(17, 17, 5);
+      object-fit: cover;
+      margin: 20px auto;
+  }
+  
+}
+
+@media (max-width: 1200px){
+  .texto { 
+      font-size: 15px; 
+      margin-bottom: 10px;
+  }
+  .texto-2 { 
+      font-size: 15px; 
+      margin-bottom: 10px;
+  }
+  .texto-3 { 
+      font-size: 15px;
+      margin-bottom: 10px; 
+  }
+  .lista-conteudo{
+      text-align: justify;
+      margin: 5px 10px 5px 10px;
+  }
+  .container-historia{
+      width: auto;
+      height: 200px;
+      background-color:#ffffff;
+      margin: 0;
+      border-radius: 0;
+      padding: 10px;
+      margin: 20px;
+  }
+}
+
+@media (max-width: 756px){
+  .Titulo-historia-empresa{
+      font-size: 10px;
+  }
+  .Texto-historia{
+      font-size: 16px;
+      width: 100%;
+
+  }
+}
+/* Fim Sobre Nós */
+
+
+
+/* Inicio Responsivo footer */
+@media (max-width:770px) {
+  .Lista-box{
+      width: 45%;
+      padding: auto;
+  }    
+}
+
+@media (max-width:600px) {
+  .Lista-box{
+      width: 100%;
+  }
+}
+/* Fim Responsivo footer */
