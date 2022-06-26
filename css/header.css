@@ -1,0 +1,470 @@
+:root {
+    --cor-fundo : rgb(37, 36, 36);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Inicio Header */
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+#menu {
+    display: flex;
+    gap: 0.5rem;
+}
+  
+#menu a {
+    display: block;
+    padding: 0.5em;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    color: #000;
+}
+
+#menu img {
+    height: 20px;
+    width: 20px;
+}
+
+.lista-com-img {
+    display: flex;
+    align-items: center;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+
+#logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: white;
+  font-family: Sans-serif;
+}
+
+#logo h2 {
+    color: #000;
+}
+
+#btn-hopper {
+  border: none;
+  background-color: #0A3FFE;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+#btn-hopper a {
+    color: white;
+}
+/* Fim Header */
+
+
+
+/* Inicio DropDown Menu */
+
+/* Fim DropDown Menu */
+
+
+
+/* Inicio Home Page */
+.container-homepage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.text-homepage {
+    text-align: center;
+}
+
+.text-homepage h2 {
+    color: #000;
+    font-size: 3em;
+    font-family: Arial;
+    letter-spacing: 1px;
+    margin-bottom: 0.9em;
+    font-weight: 500;
+}
+
+.text-homepage span {
+    font-family: Sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.text-homepage a {
+    position: relative;
+    color: #FFF;
+    background-color: #0A3FFE;
+    padding: 8px 15px;
+    font-family: Sans-serif;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.text-homepage a:hover {
+    border-bottom: 3px solid #000;
+}
+
+/* Fim Hope Page */
+
+
+/* Inicio Cards Vantagens */
+.container-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    transform: translateY(4em);
+    margin-bottom: 15px;
+}
+.card1, .card2, .card3 {
+    height: 15em;
+    width: 23em;
+    background-color: #6489ff;
+    border-radius: 0.7em;
+    transition: 0.5s;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.20);
+}
+
+.card1 .texto-card1, .card2 .texto-card2, .card3 .texto-card3 {
+    visibility: hidden;
+}
+
+.card1:hover .texto-card1, .card2:hover .texto-card2, .card3:hover .texto-card3{
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.img-card1, .img-card2, .img-card3 {
+    position: relative;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    height: 10em;
+    width: 11em;
+    background-color: rgb(215, 215, 215);
+    border-radius: 0.8em;
+    transition: 0.5s;
+}
+
+.img-card1 img, .img-card2 img, .img-card3 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card1, .card2, .card3 {
+    font-family: sans-serif;
+}
+
+.card1:hover,.card2:hover,.card3:hover {
+    height: 25em;
+}
+
+.card1:hover .img-card1,.card2:hover .img-card2,.card3:hover .img-card3 {
+    height: 12em;
+    width: 13em;
+    transition: 0.5s;
+}
+
+.conteudo-card1 h3, .conteudo-card2 h3, .conteudo-card3 h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #000;
+}
+
+.conteudo-card1 h3 span, .conteudo-card2 h3 span, .conteudo-card3 h3 span{
+    color: #eee;
+    font-size: 0.8em;
+}
+
+.texto-card1 p, .texto-card2 p, .texto-card3  p{
+    font-family: Arial;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 1.8em 2.5em 1em 2.5em;
+    color: #000;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.container-btn a {
+    position: relative;
+    background: #0A3FFE;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.6em 0.9em;
+    font-weight: 400;
+    font-size: 1.1em;
+    transition: 0.3s;
+    font-family: sans-serif;
+    border-bottom: 4px solid #000;
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+
+.container-btn a:hover {
+    cursor: pointer;
+}
+/* Final Cards Vantagens */
+
+
+/* Inicio Ações do Úsuario */
+.container-acoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-top: 1em;
+    font-size: 1.1em;
+    margin-bottom: 4em;
+}
+
+.pix, .ted, .FII, .HopeInvest, .HopeBag, .SimularFinanciamento {
+    border-radius: 0.5em;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 26em;
+    background-color: rgb(161, 161, 161);
+    color: #000;
+}
+
+.texto-FII, .texto-HopeBag, .texto-Financiamento, .texto-ted {
+    text-align: center;
+}
+/* Final Ações do Úsuario */
+
+
+/* Inicio Rodapé */
+footer{
+    background-color: rgb(37, 36, 36);
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    padding:0 4%;
+    margin:auto;
+}
+
+.container-links{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.Lista-box{
+    width: 25%;
+    padding:0 15px ;
+}
+
+.Lista-box h6{
+    font-size: 22px;
+    color: #003bfd;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.Lista-box ul li{
+    margin:10px 0;
+}
+
+.Lista-box ul li a{
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #eee;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.Lista-box ul li a:hover{
+    color: rgb(180, 170, 170);
+    padding-left: 10px;
+}
+.Redes-sociais a{
+    margin-left: 7px;
+    border:none;
+}
+.Redes-sociais h6{
+    font-size: 22px;
+    color: #d6e0ff;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.Redes-sociais ul li a{
+    border:none;
+}
+.Facebook{
+    display: flex;
+}
+/* Fim Rodapé */
+
+
+
+/* Inicio responsivo do Header */
+@media (max-width: 900px) {
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: rgb(37, 36, 36);
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: center;
+    }
+    #btn-hopper {
+      display: none;
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+      color: white;
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+}
+/* Fim responsivo do Header */
+
+
+/* Inicio responsivo HomePage */
+@media (max-width: 900px) {
+    .container-homepage {
+        flex-direction: column;
+    }
+    .text-homepage {
+        order: 2;
+    }
+    .img-homepage {
+        width: 100%;
+        height: 85%;
+    }
+}
+/* Fim responsivo HomePage */
+
+
+/* Inicio responsivo do Vantagens */
+@media (max-width: 900px) {
+    .container-cards {
+      flex-wrap: wrap;
+    }
+    .card1, .card2, .card3 {
+      margin: 3em 2em 3em 2em;
+    }
+    .card1:hover, .card2:hover, .card3:hover {
+      position: relative;
+      margin: 3.5em 0 3.5em 0; 
+    }
+    .card1 .texto-card1, .card2 .texto-card2, .card3 .texto-card3 {
+      height: 14vh;
+    }
+    .card1 .texto-card1, .card2 .texto-card2, .card3 .texto-card3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .container-btn {
+      height: 15vh;
+      align-items: flex-end;
+      margin-bottom: 1.5rem;
+    }
+}
+/* Fim responsivo do Vantagens */
+
+
+/* Inicio Responsivo Cards Ações do Usuário */
+@media (max-width: 900px) {
+  .pix, .ted, .FII, .HopeInvest, .HopeBag, .SimularFinanciamento {
+    width: 60vh;
+    font-family: Arial;
+    text-align: center;
+  }
+}
+/* Fim Responsivo Cards Ações do Usuário */
+
+
+/* Inicio Responsivo FOOTER*/
+@media (max-width:770px) {
+  .Lista-box{
+      width: 45%;
+      padding: auto;
+  }
+  
+}
+@media (max-width:600px) {
+  .Lista-box{
+      width: 100%;
+  }
+}
+/* Fim Responsivo FOOTER*/
