@@ -150,7 +150,7 @@ html {
 
 
 /* Inicio Cards Vantagens */
-.box-fundo {
+.box-fundo-cards-homepage {
     margin-left: auto;
     margin-right: auto;
     transform: translateY(4em);
@@ -290,6 +290,26 @@ html {
     text-align: center;
 }
 /* Final Ações do Úsuario */
+
+
+
+/* Inicio Vantagens parcerias */
+.box-fundo-vantagens-parcerias {  
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em 2em;
+    grid-template-areas:
+      "textos-vantagens-parceria img-lateral";
+}
+
+.img-lateral img {
+    height: 128px;
+    width: 128px;
+}
+  
+/* Fim Vantagens parcerias */
+
 
 
 /* Inicio Rodapé */
