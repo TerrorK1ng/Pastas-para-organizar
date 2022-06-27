@@ -110,6 +110,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 100vh;
 }
 
 .text-homepage {
@@ -149,81 +150,85 @@ html {
 
 
 /* Inicio Cards Vantagens */
+.box-fundo {
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(4em);
+    margin-bottom: 10px;
+    background-color: #426DFF;
+    min-height: 75vh;
+    width: 92%;
+}
+
 .container-cards {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 92vh;
-    transform: translateY(4em);
-    margin-bottom: 15px;
-}
-.card1, .card2, .card3 {
-    height: 15em;
-    width: 23em;
-    background-color: #6489ff;
-    border-radius: 0.7em;
-    transition: 0.5s;
-    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.20);
-}
-
-.card1 .texto-card1, .card2 .texto-card2, .card3 .texto-card3 {
-    visibility: hidden;
-}
-
-.card1:hover .texto-card1, .card2:hover .texto-card2, .card3:hover .texto-card3{
-    visibility: visible;
-    transition-delay: 0.5s;
-}
-
-.img-card1, .img-card2, .img-card3 {
-    position: relative;
-    left: 50%;
-    top: -10%;
-    transform: translateX(-50%);
-    height: 10em;
-    width: 11em;
-    background-color: rgb(215, 215, 215);
-    border-radius: 0.8em;
-    transition: 0.5s;
-}
-
-.img-card1 img, .img-card2 img, .img-card3 img {
-    position: absolute;
-    height: 100%;
+    min-height: 70vh;
     width: 100%;
-    object-fit: cover;
 }
 
-.card1, .card2, .card3 {
-    font-family: sans-serif;
+.textos-cards-homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
 }
 
-.card1:hover,.card2:hover,.card3:hover {
-    height: 25em;
+.textos-cards-homepage h2 {
+    font-family: Sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
-.card1:hover .img-card1,.card2:hover .img-card2,.card3:hover .img-card3 {
-    height: 12em;
-    width: 13em;
+.textos-cards-homepage span {
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 1.1em;
+    text-align: center;
+} 
+
+.card2 {
+    width: 26em;
+}
+
+.card1,.card3 {
+    height: 19em;
+    width: 24em;
     transition: 0.5s;
+    justify-content: center;    
+}
+
+.img-card2 {
+    width: 220px;
+    height: 160px;
+    margin-top: 1.4em;
+    margin-bottom: 2em;
+}
+
+.img-card1, .img-card3 {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 0.4em;
 }
 
 .conteudo-card1 h3, .conteudo-card2 h3, .conteudo-card3 h3 {
-    font-size: 1.3em;
+    font-size: 1.7em;
     font-weight: 600;
     color: #000;
+    font-family: sans-serif;
 }
 
-.conteudo-card1 h3 span, .conteudo-card2 h3 span, .conteudo-card3 h3 span{
-    color: #eee;
-    font-size: 0.8em;
-}
 
 .texto-card1 p, .texto-card2 p, .texto-card3  p{
     font-family: Arial;
     font-size: 1.1em;
     text-align: center;
-    margin: 1.8em 2.5em 1em 2.5em;
+    margin: 1.8em 3.5em 0 3.5em;
     color: #000;
 }
 
@@ -234,7 +239,7 @@ html {
 
 .container-btn a {
     position: relative;
-    background: #0A3FFE;
+    background: #0030DB;
     color: #FFF;
     text-decoration: none;
     padding: 0.6em 0.9em;
@@ -457,24 +462,31 @@ footer{
       flex-wrap: wrap;
     }
     .card1, .card2, .card3 {
-      margin: 3em 2em 3em 2em;
+        margin-top: 1.1em;
+        margin-bottom: 1.1em;
     }
-    .card1:hover, .card2:hover, .card3:hover {
-      position: relative;
-      margin: 3.5em 0 3.5em 0; 
+    .img-card1, .img-card2, .img-card3 {
+        margin: 0;
     }
-    .card1 .texto-card1, .card2 .texto-card2, .card3 .texto-card3 {
-      height: 14vh;
+    .texto-card1 p, .texto-card2 p, .texto-card3 p {
+        margin: 0 0.7em 0 0.7em;
     }
-    .card1 .texto-card1, .card2 .texto-card2, .card3 .texto-card3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    .conteudo-card1 h3, .conteudo-card2 h3, .conteudo-card3 h3{
+        margin-bottom: 0.4em;
+        margin-top: 0.5em;
+    }
+    .texto-card1 p, .texto-card2 p, .texto-card3  p {
+        margin-bottom: 0.5em;
     }
     .container-btn {
-      height: 15vh;
-      align-items: flex-end;
-      margin-bottom: 1.5rem;
+        margin-top: 10em;
+    }
+    .textos-cards-homepage h2 {
+        margin-top: 120px;
+        font-size: 1.8em;
+    }
+    .textos-cards-homepage span {
+        margin: 0 0.7em 6em 0.7em;
     }
 }
 /* Fim responsivo do Vantagens */
