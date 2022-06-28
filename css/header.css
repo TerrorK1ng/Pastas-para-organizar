@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root {
     --cor-fundo : rgb(37, 36, 36);
 }
@@ -164,7 +165,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 70vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -226,10 +227,10 @@ html {
 
 .texto-card1 p, .texto-card2 p, .texto-card3  p{
     font-family: Arial;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-align: center;
     margin: 1.8em 3.5em 0 3.5em;
-    color: #000;
+    color: #FFF;
 }
 
 .container-btn {
@@ -298,16 +299,49 @@ html {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    gap: 1em 2em;
+    gap: 1em 1em;
     grid-template-areas:
-      "textos-vantagens-parceria img-lateral";
+    "textos-vantagens-parceria img-lateral";
+    background-color: #eee;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img-lateral img {
-    height: 128px;
-    width: 128px;
+    height: 100%;
+    width: 100%;
 }
-  
+
+.container-logo-parceiros {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.ios p, .spotify p, .uber p, .aslapp p {
+    font-family: Sans-serif;
+    font-size: 1.1em;
+    color: #000;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+}
+
+.ios span, .spotify span, .uber span, .aslapp span {
+    font-family: Sans-serif;
+    font-size: 1.2em;
+    color: #000;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    font-family: Arial;
+}
+
+.ios, .spotify, .uber, .aslapp {
+    text-align: center;
+}
 /* Fim Vantagens parcerias */
 
 
@@ -361,7 +395,7 @@ footer{
 
 .Lista-box ul li a:hover{
     color: rgb(180, 170, 170);
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .Redes-sociais a{
     margin-left: 7px;
