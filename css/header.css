@@ -157,7 +157,11 @@ html {
     transform: translateY(4em);
     margin-bottom: 10px;
     background-color: #426DFF;
+<<<<<<< HEAD
     min-height: 70vh;
+=======
+    min-height: 75vh;
+>>>>>>> e8c91f8c0dd2e03e10706d92ef597cdaf81f700d
     width: 92%;
 }
 
@@ -165,7 +169,11 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+<<<<<<< HEAD
     min-height: 70vh;
+=======
+    min-height: 100vh;
+>>>>>>> e8c91f8c0dd2e03e10706d92ef597cdaf81f700d
     width: 100%;
 }
 
@@ -174,7 +182,11 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     height: 15vh;
+=======
+    height: 20vh;
+>>>>>>> e8c91f8c0dd2e03e10706d92ef597cdaf81f700d
 }
 
 .textos-cards-homepage h2 {
@@ -295,10 +307,13 @@ html {
 
 
 /* Inicio Vantagens parcerias */
+<<<<<<< HEAD
 .vantagens-parcerias {
     margin-top: 4em;
 }
 
+=======
+>>>>>>> e8c91f8c0dd2e03e10706d92ef597cdaf81f700d
 .box-fundo-vantagens-parcerias {  
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -315,8 +330,11 @@ html {
 .img-lateral img {
     height: 100%;
     width: 100%;
+<<<<<<< HEAD
     border-radius: 50%;
     transform: scaleX(-1);
+=======
+>>>>>>> e8c91f8c0dd2e03e10706d92ef597cdaf81f700d
 }
 
 .container-logo-parceiros {
@@ -327,7 +345,10 @@ html {
     width: 100%;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e8c91f8c0dd2e03e10706d92ef597cdaf81f700d
 .ios p, .spotify p, .uber p, .aslapp p {
     font-family: Sans-serif;
     font-size: 1.1em;
@@ -344,13 +365,17 @@ html {
     margin-top: 0.4em;
     margin-bottom: 0.5em;
     font-family: Arial;
+<<<<<<< HEAD
     display: inline-block;
     max-width: 13em;
+=======
+>>>>>>> e8c91f8c0dd2e03e10706d92ef597cdaf81f700d
 }
 
 .ios, .spotify, .uber, .aslapp {
     text-align: center;
 }
+<<<<<<< HEAD
 
 .texto-titulo-vantagens-parcerias {
     text-align: left;
@@ -374,6 +399,8 @@ html {
     font-weight: normal;
 }
 
+=======
+>>>>>>> e8c91f8c0dd2e03e10706d92ef597cdaf81f700d
 /* Fim Vantagens parcerias */
 
 
