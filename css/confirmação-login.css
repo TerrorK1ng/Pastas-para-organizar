@@ -53,7 +53,7 @@ body {
     width: 150px;
     border-radius: 10px;
     color: #FFF;
-    background-image: linear-gradient(to right, #426DFF, #0A3FFE);
+    background-color: #0A3FFE;
     border: none;
     cursor: pointer;
 }

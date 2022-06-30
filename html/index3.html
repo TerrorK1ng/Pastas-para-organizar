@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +7,50 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/confirmação-login.css">
+    <link rel="icon" href="/img/Logo Formato Diferente HB.png">
     <title>Tela de login</title>
 </head>
 <body>
-  <header id="header">
-    <div id="logo">
-        <a href="/index.html"><img src="/img/Logo HB.png" height="32px" width="32px"></a>
-        <h2>Hope Bank</h2>
-    </div>
-    <nav id="nav">
-        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
-            <span id="hamburger"></span>
-        </button>
-
-        <ul id="menu" role="menu">
-            <li><a href="#">Para Você</a></li>
-            <li><a href="ajuda.html">Ajuda</a></li>
-            <li><a href="SobreNós.html">Sobre Nós</a></li>
-        </ul>
-    </nav>
-    <div class="btn-hopper">
-        <button id="btn-hopper"><a href="index1.html">Seja um Hopper</a></button>
-    </div>
-  </header>
+    <header id="header">
+        <div id="logo">
+            <a href="/index.html"><img src="/img/Logo HB.png" height="42px" width="44px"></a>
+            <h2>Hope Bank</h2>
+        </div>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="ancora" href="#">Para Você</a>
+                    <ul>
+                        <li><a href="#">Cartões HB</a></li>
+                        <li><a href="#">Mimos Hopper</a></li>
+                        <li><a href="#">Investimentos</a></li>
+                        <li><a href="#">Serviços</a></li>
+                    </ul>
+                </li>
+                <li><a class="ancora" href="/html/ajuda.html">Ajuda</a>
+                    <ul>
+                        <li><a href="#">Fale com a SOI</a></li>
+                        <li><a href="#">Fale com um atendente</a></li>
+                        <li><a href="#">Chat Online</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                <li>   
+                <li><a class="ancora" href="/html/SobreNós.html">Sobre Nós</a>
+                    <ul>
+                        <li><a href="#">Nossa História</a></li>
+                        <li><a href="#">Dúvidas</a></li>
+                        <li><a href="#">Nossa Sede</a></li>
+                        <li><a href="#">Nossa Equipe</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="btn-hopper">
+            <button id="btn-hopper"><a href="/html/index1.html">Seja um Hopper</a></button>
+        </div>
+    </header>
     
     <div class="formulario">
         <center><img src="/img/pago.jpg" alt="" class="img"> </center>
@@ -40,8 +61,7 @@
         <br><br>
         <br><br>
         <a class="link2" href="index1.html"><button class="btn-login-index3">Login</button></a>
-
-        <script src="assets/JS/index.js"></script>
     </div>
+    <script src="/js/header.js"></script>
 </body>
 </html>

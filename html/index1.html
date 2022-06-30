@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/responsivo.css">
-    <link rel="stylesheet" href="/css/Homepage.css">
     <link rel="stylesheet" href="/css/login.css">
-    <title>Tela de login</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="icon" href="/img/Logo Formato Diferente HB.png">
+    <title>Abra Sua Conta Grátis</title>
 
 </head>
 <body>
     <header id="header">
         <div id="logo">
-            <a href="/index.html"><img src="/img/Logo HB.png" height="32px" width="32px"></a>
+            <a href="/index.html"><img src="/img/Logo HB.png" height="42px" width="44px"></a>
             <h2>Hope Bank</h2>
         </div>
         <nav id="nav">
@@ -27,10 +27,10 @@
                         <li><a href="#">Cartões HB</a></li>
                         <li><a href="#">Mimos Hopper</a></li>
                         <li><a href="#">Investimentos</a></li>
-                        <li><a href="#acoes">Serviços</a></li>
+                        <li><a href="#">Serviços</a></li>
                     </ul>
                 </li>
-                <li><a class="ancora" href="html/ajuda.html">Ajuda</a>
+                <li><a class="ancora" href="/html/ajuda.html">Ajuda</a>
                     <ul>
                         <li><a href="#">Fale com a SOI</a></li>
                         <li><a href="#">Fale com um atendente</a></li>
@@ -38,7 +38,14 @@
                         <li><a href="#">Contatos</a></li>
                     </ul>
                 <li>   
-                <li><a class="ancora" href="/html/SobreNós.html">Sobre Nós</a></li>
+                <li><a class="ancora" href="/html/SobreNós.html">Sobre Nós</a>
+                    <ul>
+                        <li><a href="#">Nossa História</a></li>
+                        <li><a href="#">Dúvidas</a></li>
+                        <li><a href="#">Nossa Sede</a></li>
+                        <li><a href="#">Nossa Equipe</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <div class="btn-hopper">
@@ -46,20 +53,22 @@
         </div>
     </header>
 
-    <div class="formulario">
-    <h2>Login</h2>
-    <br><br>
-    <input class = 'CPF'type="text" placeholder="CPF">
-    <br><br>
-    <input class="senha" type="password" placeholder="Senha">
-    <br><br><br><br>
-    <button>Continuar</button>
-    <br><br><br>
-    <a class="link" href="index2.html">Esqueceu sua senha?</a>
-    <br><br>
-    <a class="link" href="index4.html">Ainda não é um Hoper?</a>
+    <form action="">
+        <div class="formulario">
+            <h2>Login</h2>
+            <br><br>
+            <input class="CPF" type="text" placeholder="CPF" required>
+            <br><br>
+            <input class="senha" type="password" placeholder="Senha" required>
+            <br><br><br><br>
+            <button>Continuar</button>
+            <br><br><br>
+            <a class="link" href="index2.html">Esqueceu sua senha?</a>
+            <br><br>
+            <a class="link" href="index4.html">Ainda não é um Hoper?</a>
+    </form>
     
-<script src="js/index.js"></script>
+<script src="/js/header.js"></script>
 </div>
 </body>
 </html>

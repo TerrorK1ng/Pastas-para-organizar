@@ -8,19 +8,19 @@ body {
     margin: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-h2{
+h2 {
     text-align: center;
     margin-top: 5px;
     font-size: 30px;
     margin: auto;
 }
-h3{
+h3 {
     font-size: 12px;
     text-align: center;
     color: #426dff;
     
 }
-.formulario{
+.formulario {
     background-color: white;
     position: absolute;
     top: 55%;
@@ -48,7 +48,7 @@ button{
     width: 100%;
     border-radius: 10px;
     color: #FFF;
-    background-image: linear-gradient(to right, #426DFF, #0A3FFE);
+    background-color: #0A3FFE;
     border: none;
     cursor: pointer;
 }

@@ -166,7 +166,6 @@ html {
     justify-content: space-around;
     align-items: center;
     min-height: 70vh;
-    min-height: 100vh;
     width: 100%;
 }
 
@@ -338,12 +337,13 @@ html {
 }
 
 .ios span, .spotify span, .uber span, .aslapp span {
+    display: inline-block;
+    width: 13em;
     font-family: Sans-serif;
     font-size: 1.2em;
     color: #000;
     margin-top: 0.4em;
     margin-bottom: 0.5em;
-    font-family: Arial;
 }
 
 .ios, .spotify, .uber, .aslapp {
@@ -448,7 +448,7 @@ footer{
 
 
 
-/* Inicio responsivo do Header */
+/* Inicio responsivo Header */
 @media (max-width: 900px) {
     #menu {
       display: block;
@@ -520,11 +520,15 @@ footer{
       top: -7px;
     }
 }
-/* Fim responsivo do Header */
+/* Fim responsivo Header */
+
 
 
 /* Inicio responsivo HomePage */
 @media (max-width: 900px) {
+    .box-fundo-cards-homepage {
+        height: 150vh;
+    }
     .container-homepage {
         flex-direction: column;
     }
@@ -537,6 +541,7 @@ footer{
     }
 }
 /* Fim responsivo HomePage */
+
 
 
 /* Inicio responsivo do Vantagens */
@@ -565,7 +570,7 @@ footer{
         margin-top: 10em;
     }
     .textos-cards-homepage h2 {
-        margin-top: 120px;
+        margin-top: 5em;
         font-size: 1.8em;
     }
     .textos-cards-homepage span {
@@ -573,6 +578,32 @@ footer{
     }
 }
 /* Fim responsivo do Vantagens */
+
+
+/* Inicio responsivo vantagens parcerias */
+@media (max-width: 900px){
+    .texto-titulo-vantagens-parcerias {
+        text-align: center;
+        position: relative;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .box-fundo-vantagens-parcerias {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-logo-parceiros {
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+    .img-lateral {
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+    }
+}
+/* Fim responsivo vantagens parcerias */
+
 
 
 /* Inicio Responsivo Cards Ações do Usuário */
